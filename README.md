@@ -1,44 +1,67 @@
+# Merchex
 
-## 
+Merchex est un projet Django pour une boutique en ligne.
+
+## Installation
+
+1. Cloner le projet :
+    
+ ```bash
+git clone https://github.com/tawounfouet/django-merchex-ocr.git
+
+```
+
+2. Créer un environnement virtuel :
+
 ```bash
-# create virtual environment
 python3 -m venv .env
+```
 
-# activate virtual environment
+3. Activer l'environnement virtuel :
+
+```bash
 source .env/bin/activate
+```
 
-# install dependencies
+4. Installer les dépendances :
+
+```bash
 pip install -r requirements.txt
+```
 
-# freeze dependencies
-pip freeze > requirements.txt
 
-# run server
+
+5. Créer une base de données et appliquer les migrations :
+
+```bash
+python3 manage.py migrate
+```
+
+6. Créer un superutilisateur :
+    
+```bash
+    python3 manage.py createsuperuser
+```
+
+
+7. Lancer le serveur :
+
+```bash
 python3 manage.py runserver
 ```
 
-## Git setup
-```bash
-# show git folder on mac
-defaults write com.apple.finder AppleShowAllFiles YES
+6. Accéder à l'application dans votre navigateur à l'adresse `http://localhost:8000/`.
 
-# show git folder on vscode
-command + shift + p
-# > toggle hidden filesi
-# en francais
-# > basculer les fichiers masqués
-```
+## Contribution
 
-```bash
+Les contributions sont les bienvenues ! Pour contribuer au projet, veuillez suivre les étapes suivantes :
 
-# view .git folder
-ls -a .git
+1. Forker le projet.
+2. Créer une branche pour votre fonctionnalité (`git checkout -b nouvelle-fonctionnalité`).
+3. Commiter vos modifications (`git commit -am 'Ajout d'une nouvelle fonctionnalité'`).
+4. Pousser la branche (`git push origin nouvelle-fonctionnalité`).
+5. Ouvrir une pull request.
 
-# delete .git folder
-rm -rf .git
+## Licence
 
-# stop tracking files
-git rm -r --cached .
-
-# view current git config
-git config --list
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus d'informations.
