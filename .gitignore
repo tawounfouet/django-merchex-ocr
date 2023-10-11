@@ -1,2 +1,7 @@
 .env/
+
+# database file
 #db.sqlite3
+
+# pychace files
+__pycache__/
