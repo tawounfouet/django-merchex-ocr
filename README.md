@@ -14,7 +14,7 @@ git clone https://github.com/tawounfouet/django-merchex-ocr.git
 2. Créer un environnement virtuel :
 
 ```bash
-python3 -m venv .env
+virtualenv .env -p python3
 ```
 
 3. Activer l'environnement virtuel :
@@ -40,7 +40,7 @@ python3 manage.py migrate
 6. Créer un superutilisateur :
     
 ```bash
-    python3 manage.py createsuperuser
+python3 manage.py createsuperuser
 ```
 
 
