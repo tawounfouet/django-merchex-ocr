@@ -5,3 +5,6 @@
 
 # pychace files
 __pycache__/
+
+# git files
+.git/
